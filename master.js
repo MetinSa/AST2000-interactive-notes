@@ -60,9 +60,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         return
     }
     if(title.includes("riktig") || title.includes("rett")){
-        const ele = document.createElement("bgcolor")
+        const ele = document.documentElement
         ele.style.backgroundColor = 'yellow'
-        document.body.appendChild(ele)
         return
     }
     if(title.includes("pause")){
