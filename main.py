@@ -216,10 +216,10 @@ def create_hub_nav_html(fname: str) -> None:
 
             <script>
 
-                let arrow = document.querySelectorAll(".arrow");
+                let arrow = document.querySelectorAll(".iocn-link");
                 for (var i = 0; i < arrow.length; i++) {
                     arrow[i].addEventListener("click", (e) => {
-                        let arrowParent = e.target.parentElement.parentElement;
+                        let arrowParent = e.target.parentElement;
                         arrowParent.classList.toggle("showMenu");
                     });
                 }
