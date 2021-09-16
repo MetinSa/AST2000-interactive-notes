@@ -29,18 +29,18 @@ function getHistory(){
     let html = ''
     for(let i = historyCookies.length -1; i > 0 ; i--){
         let split = historyCookies[i].split( '=' );
-        // console.log("yeet", split)
-        let link = split[1].split('?')[0]
 
+        let link = split[1].split('?')[0]
+        link = link.replace("https://acruxdb.uio.no","")
         let timestamp = historyCookies[i].split( '?' );
         timestamp = timestamp[timestamp.length - 1]
         
         let name = link.split("forelesninger/").pop()
-
-        html += `<a href="${link}"><li class="list-group-item">${name}<br/><span class="small-font"> ${timestamp} <span></li></a>`
+ 
+        html += `<a href='${link}'><li class='list-group-item'>${name}<br/><span class='small-font'> ${timestamp} <span></li></a>`
     }
     //console.log(html)
-
+ 
     return html
 }
 
