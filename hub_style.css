@@ -15,6 +15,8 @@
 }
  
 .sidebar {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,9 +30,9 @@
   width: 78px;
 }
 .sidebar .logo-details {
-  height: 60px;
-  width: 100%;
   display: flex;
+  height: 10%;
+  width: 100%;
   align-items: center;
 }
 .sidebar .logo-details i {
@@ -55,6 +57,8 @@
   pointer-events: none;
 }
 .sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
   height: 70%;
   padding: 30px 0 0 0;
   overflow: scroll;
